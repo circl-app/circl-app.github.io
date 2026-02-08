@@ -616,7 +616,7 @@ a {
   border-bottom: none;
 }
 
-/* === Mobile === */
+/* === Tablet === */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -647,63 +647,196 @@ a {
   }
 
   .hero {
-    padding: 100px 24px 60px;
-    min-height: auto;
+    padding: 0 24px;
     min-height: 100dvh;
+  }
+
+  .hero-logo svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .hero-logo {
+    margin-bottom: 24px;
   }
 
   .hero-title {
     font-size: 38px;
+    margin-bottom: 16px;
   }
 
   .hero-subtitle {
     font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    max-width: 380px;
+  }
+
+  .hero-cta {
+    padding: 12px 36px;
+    font-size: 15px;
+  }
+
+  .hero-divider {
+    margin: 32px auto 20px;
+  }
+
+  .hero-callout {
+    font-size: 13px;
   }
 
   .features {
     padding: 60px 0;
   }
 
+  .section-inner {
+    padding: 0 20px;
+  }
+
   .features-grid {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 12px;
   }
 
   .feature-card {
-    padding: 20px;
+    padding: 18px 16px;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
   }
 
   .feature-icon {
+    width: 44px;
+    height: 44px;
     margin-bottom: 0;
     flex-shrink: 0;
   }
 
+  .feature-title {
+    font-size: 16px;
+  }
+
+  .feature-description {
+    font-size: 14px;
+  }
+
   .how-it-works {
-    padding: 60px 0 80px;
+    padding: 50px 0 60px;
   }
 
   .section-title {
     font-size: 30px;
+    padding: 0 8px;
+  }
+
+  .section-subtitle {
+    font-size: 15px;
+    margin-bottom: 36px;
+    padding: 0 8px;
+  }
+
+  .steps {
+    margin: 0 auto 32px;
+  }
+
+  .step-text {
+    font-size: 15px;
+  }
+
+  .callout {
+    font-size: 15px;
+    padding: 14px 20px;
   }
 
   .cta {
-    padding: 60px 0 80px;
+    padding: 50px 0 60px;
   }
 
   .cta-title {
     font-size: 28px;
+    padding: 0 8px;
+  }
+
+  .cta-subtitle {
+    font-size: 16px;
   }
 
   .cta-form {
     flex-direction: column;
+    padding: 0 8px;
+  }
+
+  .cta-input {
+    padding: 14px 16px;
+    font-size: 16px; /* prevents iOS zoom on focus */
+  }
+
+  .cta-button {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 32px 20px;
   }
 
   .footer-inner {
     flex-direction: column;
     gap: 16px;
     text-align: center;
+  }
+
+  /* Legal pages */
+  .legal {
+    padding: 100px 20px 60px;
+  }
+
+  .legal-title {
+    font-size: 32px;
+  }
+
+  .legal h2 {
+    font-size: 18px;
+  }
+
+  .legal-table {
+    font-size: 13px;
+  }
+
+  .legal-table th,
+  .legal-table td {
+    padding: 8px 10px;
+  }
+}
+
+/* === Small phones === */
+@media (max-width: 390px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+    max-width: 300px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .cta-title {
+    font-size: 24px;
+  }
+
+  .step-text {
+    font-size: 14px;
+  }
+
+  .feature-title {
+    font-size: 15px;
+  }
+
+  .feature-description {
+    font-size: 13px;
   }
 }
