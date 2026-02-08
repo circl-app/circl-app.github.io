@@ -169,15 +169,6 @@ a {
   margin-right: auto;
 }
 
-.hero-callout {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text-tertiary);
-  letter-spacing: 0.3px;
-  margin-bottom: 40px;
-}
-
 .hero-cta {
   display: inline-block;
   padding: 14px 40px;
@@ -193,6 +184,20 @@ a {
   background: var(--text-accent);
   color: var(--bg-primary);
   transform: translateY(-1px);
+}
+
+.hero-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--glass-border-highlight);
+  margin: 36px auto 28px;
+}
+
+.hero-callout {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  letter-spacing: 0.3px;
 }
 
 /* Hero entrance animations */
