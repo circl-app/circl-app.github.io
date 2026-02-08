@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--bg-primary);
 }
 
 body {
@@ -36,6 +37,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* iOS Safari doesn't support background-attachment: fixed */
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-attachment: scroll;
+    background-color: var(--bg-primary);
+  }
 }
 
 a {
