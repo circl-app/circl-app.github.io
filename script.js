@@ -43,7 +43,7 @@ navLinks.querySelectorAll('a').forEach((link) => {
 
 // Waitlist form
 const SUPABASE_URL = 'https://xewbyxqjilgfkgrcaeog.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inhld2J5eHFqaWxnZmtncmNhZW9nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzgwNzQ2NTksImV4cCI6MjA1MzY1MDY1OX0.TtMxOmSB0UYDkiBFMWCgfdiwEuJlmn_FAelKkPSaY8w';
+const SUPABASE_ANON_KEY = 'sb_publishable_z_0KvCtKCgGMrWmdaVsCVA_Uk5R7FYR';
 
 const ctaForm = document.querySelector('.cta-form');
 const ctaInput = document.querySelector('.cta-input');
