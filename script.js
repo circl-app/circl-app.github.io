@@ -14,6 +14,32 @@ document.querySelectorAll('.scroll-animate').forEach((el) => {
   observer.observe(el);
 });
 
+// Demo cascade animation
+const demoSection = document.getElementById('demo');
+if (demoSection) {
+  const demoElements = demoSection.querySelectorAll('.demo-animate');
+  let demoTriggered = false;
+
+  const demoObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !demoTriggered) {
+          demoTriggered = true;
+          demoElements.forEach((el, i) => {
+            setTimeout(() => {
+              el.classList.add('in-view');
+            }, i * 300);
+          });
+          demoObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  demoObserver.observe(demoSection);
+}
+
 // Nav background on scroll
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
