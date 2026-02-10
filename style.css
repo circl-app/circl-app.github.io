@@ -390,6 +390,72 @@ a {
   line-height: 1.4;
 }
 
+/* === Demo 2: Groups + Image === */
+.demo-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--glass-border-highlight);
+  margin: 48px auto;
+}
+
+.demo-question-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.demo-question-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.demo-groups-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.demo-group-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-accent);
+  background: rgba(107, 163, 199, 0.12);
+  border: 1px solid rgba(107, 163, 199, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+}
+
+.demo-group-chip svg {
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.demo-groups-reach {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  letter-spacing: 0.2px;
+}
+
+/* Demo groups cascade animation */
+.demo-groups-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.demo-groups-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Demo cascade animation */
 .demo-animate {
   opacity: 0;
@@ -871,6 +937,14 @@ a {
 
   .demo-option-voters {
     font-size: 12px;
+  }
+
+  .demo-question-image {
+    height: 160px;
+  }
+
+  .demo-divider {
+    margin: 36px auto;
   }
 
   .how-it-works {

@@ -40,6 +40,29 @@ if (demoSection) {
   demoObserver.observe(demoSection);
 }
 
+// Demo 2 (groups) cascade animation
+const demoGroupsElements = document.querySelectorAll('.demo-groups-animate');
+if (demoGroupsElements.length) {
+  let demoGroupsTriggered = false;
+  const demoGroupsObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !demoGroupsTriggered) {
+          demoGroupsTriggered = true;
+          demoGroupsElements.forEach((el, i) => {
+            setTimeout(() => {
+              el.classList.add('in-view');
+            }, i * 300);
+          });
+          demoGroupsObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+  demoGroupsObserver.observe(demoGroupsElements[0]);
+}
+
 // Nav background on scroll
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
