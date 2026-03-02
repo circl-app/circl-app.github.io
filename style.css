@@ -574,49 +574,23 @@ a {
   margin-bottom: 32px;
 }
 
-.cta-form {
-  display: flex;
-  gap: 12px;
-  max-width: 420px;
-  margin: 0 auto 16px;
+.cta-download {
+  text-align: center;
+  margin: 0 auto 20px;
 }
 
-.cta-input {
-  flex: 1;
-  padding: 14px 18px;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-md);
-  color: var(--text-primary);
-  font-size: 15px;
-  outline: none;
-  transition: border-color 0.2s;
+.app-store-badge {
+  display: inline-block;
+  transition: transform 0.2s, opacity 0.2s;
 }
 
-.cta-input::placeholder {
-  color: var(--text-tertiary);
+.app-store-badge:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
-.cta-input:focus {
-  border-color: var(--glass-border-highlight);
-}
-
-.cta-button {
-  padding: 14px 28px;
-  background: var(--action-primary);
-  color: var(--bg-primary);
-  font-size: 15px;
-  font-weight: 600;
-  border: none;
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-  white-space: nowrap;
-}
-
-.cta-button:hover {
-  background: var(--text-accent);
-  transform: translateY(-1px);
+.app-store-badge svg {
+  display: block;
 }
 
 .cta-note {
@@ -988,19 +962,9 @@ a {
     font-size: 16px;
   }
 
-  .cta-form {
-    flex-direction: column;
-    padding: 0 8px;
-  }
-
-  .cta-input {
-    padding: 14px 16px;
-    font-size: 16px; /* prevents iOS zoom on focus */
-  }
-
-  .cta-button {
-    padding: 14px 24px;
-    font-size: 16px;
+  .app-store-badge svg {
+    width: 156px;
+    height: 52px;
   }
 
   .footer {
